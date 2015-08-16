@@ -10,7 +10,7 @@ module.exports = {
         var filter = m.route.param('filter') || '';
 
         function toggleAll () {
-            var allSelected = ctrl.models.length === ctrl.numComplete();
+            var allSelected = ctrl.models.length === ctrl.completed().length;
             return {
                 type: 'checkbox',
                 onclick: function () {

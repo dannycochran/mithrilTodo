@@ -6,6 +6,6 @@ module.exports = function () {
     return Collection.extend({
         name: 'todos',
         model: Todo,
-        numComplete: function () { return this.models.filter(model => model.get('is_completed')).length; }
+        completed: function () { return this.models.filter(model => model.get('is_completed')); }
     });
 };
