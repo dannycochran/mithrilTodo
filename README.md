@@ -8,4 +8,5 @@ Mithril Todo w/ Modules
 2. Install npm modules & run app:
 
     npm install
+
     grunt app
