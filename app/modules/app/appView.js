@@ -17,7 +17,7 @@ module.exports = {
         }.bind(this));
     },
     controller: function () {
-        m.redraw.strategy('diff');
+        m.redraw.strategy('none');
         return Todos;
     },
     view: function (ctrl) {

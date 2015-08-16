@@ -2,7 +2,10 @@ var m = require('mithril'),
     Todo = require('../todo/todoView.js');
 
 module.exports = {
-    controller: function (ctrl) { return ctrl; },
+    controller: function (ctrl) {
+        m.redraw.strategy('none');
+        return ctrl;
+    },
     view: function (ctrl) {
         var filter = m.route.param('filter') || '';
 
